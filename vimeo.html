@@ -1,0 +1,20 @@
+<!------------- PLYR.IO ------------>
+<link rel="stylesheet" href="https://emersson126.github.io/reproductor/plyr.css">
+<div class="plyr__video-embed" id="player">
+    <iframe height="500" src="https://player.vimeo.com/video/1050202739?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media" allowfullscreen allowtransparency allow="autoplay"></iframe>
+</div>
+<script src="https://emersson126.github.io/reproductor/plyr.js"></script>
+<script>
+    const player = new Plyr('#player', {
+        controls: [
+            'play-large',
+            'play',
+            'mute',
+            'fullscreen' 
+        ]
+    });
+    player.on('ended', () => {
+                window.location.href = 'https://nextius.com'; 
+    });
+</script>
+<!------------- PLYR.IO ------------>
